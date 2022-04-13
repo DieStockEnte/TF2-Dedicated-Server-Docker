@@ -16,9 +16,11 @@ COPY server.cfg /home/hlserver/tf2/tf/cfg
 COPY tf2.sh /home/hlserver/tf2
 COPY tf2server.service /etc/systemd/system
 RUN cd /home && ls
+RUN cd /home/gameserver && ls
 RUN cd /home/hlserver && ls
-RUN cd /home/ && ls
-RUN	cd /home/hlserver/tf2 \
+RUN cd /home/hlserver && ls
+WORKDIR /home/hlserver/tf2
+RUN	cd /home/hlserver/tf2 && ls \
 	&& chmod u+x tf2.sh \
 	&& systemctl daemon-reload \
 	&& systemctl enable tf2server.service \
