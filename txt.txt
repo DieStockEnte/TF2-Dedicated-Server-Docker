@@ -1,9 +1,0 @@
-TO DO:
-1. Dockerfile to image => docker build --force-rm -t diestockente/tf2server:1.0 .
-2. upload image
-3. install image on server as container
-4. run container
-5. debug
-6. install sourcemod
-7. install plugin
-8. have fun

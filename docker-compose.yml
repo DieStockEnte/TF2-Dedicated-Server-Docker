@@ -1,0 +1,24 @@
+version: '3.5'
+services:
+  tf-server:
+    build: .
+    image: local/steam-tf2
+    command: +log on +sv_pure 1 +maxplayers 24 +ip 0.0.0.0 -timeout 2 -strictportbind +randommap
+    container_name: tf
+# if something doesn't work due to permission error, change "user:steam" to "user:root"
+    user: root
+    restart: always
+    stdin_open: true
+    tty: true
+    ports:
+      - "27015:27015/tcp"
+      - "27015:27015/udp"
+    logging:
+        driver: "json-file"
+        options:
+            max-file: "5"
+            max-size: "10m"
+# If you want to make connection from the docker container to the main OS, then add here your connections.
+# Here is an example, which connects a sqlite database file from a sourcemod plugin to the main OS:
+#    volumes:
+#      - /var/lib/docker/tf2_server/tf2_server_sqlite.sq3:/home/steam/steamcmd/tf2/tf/addons/sourcemod/data/sqlite/server-sqlite.sq3

@@ -1,0 +1,32 @@
+// Advertisements 2.1
+// by Tsunami
+//
+// Types
+// -----
+// center: Center message
+// chat: Chat message
+// hint: Hint message
+// menu: Menu message
+// top: Top message
+//
+// Flags (optional)
+// -----
+// Accepts flags of admins that will not see the advertisement.
+// When omitted everyone will see the advertisement.
+// When left empty only admins will see the advertisement.
+
+"Advertisements"
+{
+	"1"
+	{
+		"top"		"www.domain.com"
+	}
+	"2"
+	{
+		"chat"		"{slategrey}----------------\n{tomato}[SERVER] {default}Vote for new maps on our Wesbite!\n{green}www.domain.com\n{slategrey}----------------"
+	}
+	"3"
+	{
+		"chat"		"{slategrey}----------------\n{tomato}[SERVER] {default}Check the server commands out with:\n{green}/helpme\n{slategrey}----------------"
+	}
+}

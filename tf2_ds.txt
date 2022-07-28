@@ -1,0 +1,4 @@
+force_install_dir /home/steam/steamcmd/tf2
+login anonymous
+app_update 232250
+quit
