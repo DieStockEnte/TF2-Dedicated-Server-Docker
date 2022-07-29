@@ -17,7 +17,7 @@ If you are not able to connect to the server, then check if the ports `27015/udp
 ### With the following commands you can do some actions with the server:
 #### See if a container is existing and running:
 ```
-docker ls
+docker ps
 ```
 #### Stop the server:
 ```
