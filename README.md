@@ -56,7 +56,7 @@ tf_bot_auto_vacate 1
 ```
 
 ## Final part:
-You can use, change, share and modify the files in this repository.<br />
+You can use, change, share and modify the files from this repository.<br />
 I do not own and did not created the map `koth_hangar_rc5.bsp`. Credits go to: *Uncuepa*<br />
 If you have any questions or want to contribute to this repository feel free to do so!<br />
 Have fun with this little project! 😜
