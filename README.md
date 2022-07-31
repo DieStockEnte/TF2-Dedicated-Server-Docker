@@ -47,7 +47,7 @@ koth_hangar_rc5
 ctf_2fort
 pl_test_map_a1
 ```
-### Add a bots:
+### Add bots:
 To add bots add these lines to the config file `cfg/server.cfg`:
 ```
 tf_bot_quota 24
